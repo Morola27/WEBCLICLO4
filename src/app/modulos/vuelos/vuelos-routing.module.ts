@@ -9,7 +9,7 @@ const routes: Routes = [
     path: 'create',
     component: CreateComponent,
   },{
-    path: 'edit',
+    path: 'edit/:id',
     component: EditComponent,
   },{
     path: 'get',
@@ -25,5 +25,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-
 export class VuelosRoutingModule { }
